@@ -1,0 +1,15 @@
+body {
+    color: white;
+    background-color: midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover, a:active {
+    border-bottom: 2px solid goldenrod;
+    color: red;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: gold;
+}

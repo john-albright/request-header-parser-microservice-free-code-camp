@@ -1,0 +1,4 @@
+# Free Code Camp: APIs and Microservices Project 2/5
+## [Request Header Parser Microservice](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice)
+
+This project is the second of five projects to be completed for FreeCodeCamp's fifth of six JavaScript certificate: [APIs and Microservices](https://www.freecodecamp.org/learn/apis-and-microservices#apis-and-microservices-projects). The API retrieves information about the computer and browser being used by the user. A JSON object is returned at the subdirectory /whoami/ with the keys ipaddress, language, and software. It is a simple API that only has one subdirectory that cannot be customized in any way.
