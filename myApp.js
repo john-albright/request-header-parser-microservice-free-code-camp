@@ -1,9 +1,8 @@
-var express = require('express');
-
-app = express();
+const express = require('express');
+var app = express();
 
 // Change the proxy settings to allow the IP to be accessed
-app.set('trust proxy')
+app.set('trust proxy', true);
 
 // Mount the middleware to serve the styles sheet in the public folder
 app.use("/public", express.static(__dirname + "/public"));
@@ -13,10 +12,9 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get('/whoami', (req, res) => {
-    //res.send({"header": req.headers});
+app.get('/api/whoami', (req, res) => {
     res.send({
-        "ipaddress": req.headers['x-forwarded-for'],
+        "ipaddress": req.ip,
         "language": req.headers["accept-language"],
         "software": req.headers["user-agent"]
     });
