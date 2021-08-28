@@ -1,15 +1,24 @@
 body {
+    padding: 10px 30px;
     color: white;
     background-color: midnightblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a {
+    color: gold;
+}
+
 a:hover, a:active {
-    border-bottom: 2px solid goldenrod;
-    color: red;
+    color: peru;
+    transition: color 0.2s ease-in;
 }
 
 a:link, a:visited {
     text-decoration: none;
-    color: gold;
+}
+
+h1, h2 {
+    color: rosybrown;
+    line-height: 50px;
 }
