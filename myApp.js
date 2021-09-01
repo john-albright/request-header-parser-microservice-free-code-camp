@@ -1,6 +1,11 @@
 const express = require('express');
 var app = express();
 
+// Enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+// So that API is remotely testable by FCC 
+var cors = require('cors');
+app.use(cors({optionsSuccessStatus: 200}));  // some legacy browsers choke on 204
+
 // Change the proxy settings to allow the IP to be accessed
 app.set('trust proxy', true);
 
